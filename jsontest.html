@@ -1,0 +1,54 @@
+<body>
+
+<h2>Links</h2>
+<ol id="applicationTitles">
+</ol>
+<script>
+
+var info = {
+  "applicationTitles" : 
+    [
+            {"Laminating & Coating" : ["For over twenty five years, needlepunch fabrics made at the New England Nonwovens facility have been utilized as laminating and coating substrates. New England Nonwoven needlepunch fabrics are used in laminating process that include, wet adhesive bonding, dry web bonding, hot melt bonding, flame bonding and ultrasonic bonding. Needlepunch fabrics are also widely used in coating process such as, cast coating, expanded coating, extrusion coating, direct coating knife blade, direct coating gravure roll and direct screen coating. New England Nonwoven needlepunch fabrics are used to build composite structures where the needlepunch is used to provide bulk, body and resilience."]
+        },
+            {"Healthcare" : ["New England Nonwovens needlepunch 'soaker' fabric has been a mainstay in the manufacture of reusable incontinent pads and briefs over the years. These New England Nonwoven needlepunch fabrics are made to be highly absorbent and containing for liquids. Some needlepunch blends will wick very fast to move moisture away from the body and some will hold large volumes of fluids. Special fibers can be added to control the growth of odor causing bacteria and viruses.", "New England Nonwoven needlepunch fabrics are used to make soft, comfortable surface fabrics for microwavable hot packs to ease muscle aches. Needlepunch felts are extensively used in orthordic braces and devices to provide a soft interface between the equipment and the body."]
+        },
+            {"Home Products" : ["Our needlepunch fabrics have many uses in 'home product'. Top of the bed items such as mattress pads, blankets and comforters are common uses for New England Nonwovens needlepunch fabrics. New England Nonwovens needlepunch fabrics are also widely use in pot holders, ironing boards, floor insulation, table pads, cushion pads, filters and in many more household items."]
+        },
+            {"Wipes" : ["Wipes of all kinds utilize New England Nonwovens needlepunch nonwoven fabrics. Some examples are: cosmetic wipes needing high absorbency and cleaning wipes that are fluid filled for ease of use and comfort. Wipes made from New England Nonwoven needlepunch fabrics that have high oil absorbency are used in environmental clean up operations."]
+        },
+            {"Mattresses &#45; Flame Retardant Barrier Fabrics": ["All mattresses made and sold in the United States after July 1st 2007 must meet the Federal Regulation 16 CFR part 1633 for flammability requirements. New England Nonwoven flame retardant needlepunch fabrics, made to the rigid standards provided by our customers, have been widely used to help mattress manufacturers meet this new Federal Standard. The flame retardant needlepunch fabrics can be quilted, laminated, combined, printed and sewn with other mattress components to provide effective fire barriers."]
+        },
+            {"Molding" : ["New England Nonwovens needlpunch fabrics can be made with blends of regular fibers and low melt fibers that allow the material to take and hold a shape in many molding applications. The needlepunch fabrics can also be saturated with polymer resins that allow the material to be molded with considerable rigidity. These molded needlepunch fabrics find there way into a variety of products such as automotive trunks and interiors, hats, medical products, filters, abrasive pads, insulators and many more."]
+        },
+            {"Automotive" : ["Needlepunch fabrics are extensively used in automotive applications in the trunk, under the hood and in the interior. The needlepunch fabrics can be made to provide heat insulation, acoustical barriers, filters for liquids and air and interior surface fabrics." , "Soft needlepunch fabrics are used to make protective pads that mechanics place on the automobile to protect the paint and finish during repairs."]
+        },
+            {"Carpet Pads" : ["Needlepunch fabrics are commonly used to make carpet pads for carpets and rugs of all shapes and sizes. Polyester, polypropylene and wool are just some of the fibers used to make needlepunch fabric pads for the carpet and rug market. Needlepunch carpet pads have long been used to provide a layer of cushion, comfort and protection under carpets and rugs. New England Nonwovens needlepunch carpet pads from 10 to 30 ounces per yard are currently in use."]
+        },
+            {"Safety Mats" : ["New England Nonwovens polypropylene needlepunch cut into mats and placed around machinery can be an effective help in provided safe footing for operators. Polypropylene has an affinity for oil and thus can help keep floors subjected to machinery oils from becoming slippery. New England Nonwovens needlpunch fabrics have also been coated and laminated to provide fluid proof and high grip surfaces."]
+        }
+            
+    ]
+      
+}
+;
+
+var output = '';
+
+for (var i = 0; i <= info.applicationTitles.length; i++) {
+    for (key in info.applicationTitles[i]) {
+        if (info.applicationTitles[i].hasOwnProperty(key)) {
+            output += '<li>' +
+            '<a href = "' + info.applicationTitles[i][key] +
+            '">' + key + '</a>' +
+            '</li>';
+        } // hasOwnProperty check
+    } // for each object
+} //for each array element
+
+var update = document.getElementById('applicationTitles');
+update.innerHTML = output;
+
+    
+</script>
+    
+</body>

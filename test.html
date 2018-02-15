@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<head>
+    
+    
+    
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">   
+
+    <link rel="stylesheet" type="text/css" href="layout.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+    
+</head>
+
+
+<body>
+
+    <div id="h1">
+
+        Test
+            
+    </div>
+    
+
+        
+        <p id="text">Hello World!</p>
+        
+<button id="myButton" onclick="myfunction()">Change</button>
+        
+    <script type="text/javascript">
+            
+        function myfunction(){
+                
+            var leftButtons = document.querySelectorAll('.circleLeft');
+            
+            var i;
+                
+            i = 0;
+                
+                
+            if (leftButtons[0].style.backgroundColor == 'darkgray'){
+                
+
+                
+                for (i = 0; i < leftButtons.length; i++){
+                    leftButtons[i].style.backgroundColor = 'Black';    
+                    
+                    }
+                }
+                    
+                    
+                
+            else {
+            
+                
+                for (i = 0; i < leftButtons.length; i++){
+                    leftButtons[i].style.backgroundColor = 'darkgray';
+                    }
+                }
+            }
+        
+    </script>
+        
+    
+    
+<div class="item">
+            
+    <div class="box">
+                
+        <p>Number 2</p>
+            
+    </div>
+
+    
+    <div class="circleLeft"></div>
+    <div id="circleRight"></div>
+        
+</div>
+    
+<div class="item">
+            
+    <div class="box">
+                
+        <p>Number 2</p>
+            
+    </div>
+ 
+    <div class="circleLeft" id="cL1"></div>
+    <div id="circleRight"></div>
+        
+</div>
+    
+    
+
+   <div class="item">
+            
+    <div class="box">
+                
+        <p>Number 2</p>
+            
+    </div>
+
+    
+    <div class="circleLeft"></div>
+    <div id="circleRight"></div>
+       
+       
+        
+</div>
+             
+           <script>  
+            $("div").click(function() {
+                
+                if ($(this).attr("class") == "circleLeft") {
+                
+                    alert("You clicked on a circle");
+                    
+                } else {
+                    
+                    alert("You clicked on a square")
+                }
+                
+            });
+           </script>
+    
+ 
+
+    
+</body>

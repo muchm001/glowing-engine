@@ -1,0 +1,40 @@
+<script>        
+var output = '<div class="container" id= "applicationList"> <h2>Applications</h2> <p><strong>Needlepunch Nonwoven Fabrics</strong> New England Nonwoven fabrics are use in a myriad of markets and applications. Some of the more prominent applications are:</p> <div class="panel-group" id="accordion"> '
+
+for (var i = 0; i <= info.applicationTitles.length; i++) {
+    for (key in info.applicationTitles[i]) {
+        if (info.applicationTitles[i].hasOwnProperty(key)) {
+            output += '<div class="panel panel-default">' + '<div class="panel-heading">' + '<h4 class="panel-title">' + '<a data-toggle="collapse" data-parent="#accordion" href="#collapse1' + i + '">' + key +'</a>' </h4> </div> <div id="collapse' i + '" class="panel-collapse collapse in"><div class="panel-body">' + info.applicationTitles[i][key] + '</div> </div> </div>';
+        } // hasOwnProperty check
+    } // for each object
+} //for each array element
+
+var update = document.getElementById('applicationList');
+update.innerHTML = output;
+
+
+
+
+    
+</script>   
+
+<div class="container" id= "applicationList">
+    <h2>Applications</h2>
+    <p><strong>Needlepunch Nonwoven Fabrics</strong> New England Nonwoven fabrics are use in a myriad of markets and applications. Some of the more prominent applications are:</p>
+        <div class="panel-group" id="accordion">
+    
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Laminating & Coating</a>
+                    </h4>
+                </div>
+                <div id="collapse1" class="panel-collapse collapse in">
+                        <div class="panel-body">For over twenty five years, needlepunch fabrics made at the New England Nonwovens facility have been utilized as laminating and coating substrates. New England Nonwoven needlepunch fabrics are used in laminating process that include, wet adhesive bonding, dry web bonding, hot melt bonding, flame bonding and ultrasonic bonding. Needlepunch fabrics are also widely used in coating process such as, cast coating, expanded coating, extrusion coating, direct coating knife blade, direct coating gravure roll and direct screen coating. New England Nonwoven needlepunch fabrics are used to build composite structures where the needlepunch is used to provide bulk, body and resilience 
+                        </div>
+                </div>
+            </div>
+    
+        </div>
+</div>
+

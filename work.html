@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+
+<head>
+    
+    
+    
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">   
+
+    <link rel="stylesheet" type="text/css" href="layout.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+    
+</head>
+
+
+
+
+
+<body>
+        
+        <p id="text">Hello Rob!</p>
+        
+        <button id="myButton" class="circleLeft">Change Color</button>
+        
+        <script type="text/javascript">
+            
+            document.getElementById("myButton").onclick = function() {
+                
+                document.getElementById("box").style.backgroundColor = "#FFFFFF";
+                
+            }
+        
+        </script>
+        
+    
+
+</body>
+
+
+
+         <script>
+             $('#circleLeft').click(function(){
+                alert('Working');
+                var className = $(this).attr("box");
+                var color = $(this).attr("#FFFFFF");
+                $("."+className).css("background-color",color);
+            });
+        </script>
+
+
+
+
+var time = new Date().getHours(); 
+if (time < 20) {
+    greeting = "Good day";
+ } else {
+    greeting = "Good evening";
+ } 
+
+              
+<button id="myButton" onclick="myfunction()">Change</button>
+
+    <script type="text/javascript">
+            
+        function myfunction(){
+                
+            var leftButtons = document.querySelectorAll('.circleLeft');
+                
+                
+            if (leftButtons[0].style.backgroundColor == 'Black') {
+                
+                var i;
+                
+                i = 0;
+                
+                for (i = 0; i < leftButtons.length; i++){
+                    leftButtons[i].style.backgroundColor = 'darkgray';    
+                    
+                }
+                }
+                    
+                    ;
+                
+                else 
+                  {
+                var leftButtons = document.querySelectorAll('.circleLeft');
+                
+                var i;
+                      
+                i = 0;
+                
+                for (i = 0; i < leftButtons.length; i++){
+                    leftButtons[i].style.backgroundColor = 'Black';
+                }
+                }
+            }
+        
+        </script>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+    <title>JavaScript And JSON</title>
+</head>
+<body>
+
+<h2>Links</h2>
+<ol id="links">
+</ol>
+
+<script>
+
+var info = {
+        "full_name" : "Ray Villalobos",
+        "title" : "Staff Author",
+        "links" : [
+                { "blog"     : "http://iviewsource.com" },
+                { "facebook" : "http://facebook.com/iviewsource" },
+                { "podcast"  : "http://feeds.feedburner.com/authoredcontent" },
+                { "twitter"  : "http://twitter.com/planetoftheweb" },
+                { "youtube"  : "http://www.youtube.com/planetoftheweb" }
+            ]
+        };
+
+var output = '';
+
+for (var i = 0; i <= info.links.length; i++) {
+    for (key in info.links[i]) {
+        if (info.links[i].hasOwnProperty(key)) {
+            output += '<li>' +
+            '<a href = "' + info.links[i][key] +
+            '">' + key + '</a>' +
+            '</li>';
+        } // hasOwnProperty check
+    } // for each object
+} //for each array element
+
+var update = document.getElementById('links');
+update.innerHTML = output;
+
+</script>
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+      
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+    
+    <link rel="stylesheet" href="NEN.css">
+
+
+    
+    
+</head>
+    
+
+    
+    
+<body>
+    
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="C:\Program Files (x86)\Brackets\samples\root\Getting Started\NEN.html">NEN</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="C:\Program Files (x86)\Brackets\samples\root\Getting Started\NENaboutus.html">About Us</a></li>
+        <li class="active"><a href="C:\Program Files (x86)\Brackets\samples\root\Getting Started\NENapplications.html">Applications</a></li>
+        <li><a href="#">Capabilities</a></li>
+      </ul>
+     <button class="btn btn-primary navbar-btn navbar-right"><span class= "glyphicon glyphicon-envelope"></span> Contact Us</button>
+    </div>
+  </div>
+</nav>  
+    
+    
+<div class="container">
+  <h2>Applications</h2>
+  <p><strong>Needlepunch Nonwoven Fabrics</strong> New England Nonwoven fabrics are use in a myriad of markets and applications. Some of the more prominent applications are:</p>
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Laminating & Coating</a>
+        </h4>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse in">
+        <div class="panel-body">For over twenty five years, needlepunch fabrics made at the New England Nonwovens facility have been utilized as laminating and coating substrates. New England Nonwoven needlepunch fabrics are used in laminating process that include, wet adhesive bonding, dry web bonding, hot melt bonding, flame bonding and ultrasonic bonding. Needlepunch fabrics are also widely used in coating process such as, cast coating, expanded coating, extrusion coating, direct coating knife blade, direct coating gravure roll and direct screen coating. New England Nonwoven needlepunch fabrics are used to build composite structures where the needlepunch is used to provide bulk, body and resilience </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Healthcare</a>
+        </h4>
+      </div>
+      <div id="collapse2" class="panel-collapse collapse">
+        <div class="panel-body">
+            <p>New England Nonwovens needlepunch "soaker" fabric has been a mainstay in the manufacture of reusable incontinent pads and briefs over the years. These New England Nonwoven needlepunch fabrics are made to be highly absorbent and containing for liquids. Some needlepunch blends will wick very fast to move moisture away from the body and some will hold large volumes of fluids. Special fibers can be added to control the growth of odor causing bacteria and viruses.</p>
+            <p> New England Nonwoven needlepunch fabrics are used to make soft, comfortable surface fabrics for microwavable hot packs to ease muscle aches. Needlepunch felts are extensively used in orthordic braces and devices to provide a soft interface between the equipment and the body.</p> 
+          </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Home Products</a>
+        </h4>
+      </div>
+      <div id="collapse3" class="panel-collapse collapse">
+        <div class="panel-body">Our needlepunch fabrics have many uses in 'home product'. Top of the bed items such as mattress pads, blankets and comforters are common uses for New England Nonwovens needlepunch fabrics. New England Nonwovens needlepunch fabrics are also widely use in pot holders, ironing boards, floor insulation, table pads, cushion pads, filters and in many more household items.</div>
+      </div>
+    </div>
+          <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">Wipes</a>
+        </h4>
+      </div>
+      <div id="collapse4" class="panel-collapse collapse">
+        <div class="panel-body">Wipes of all kinds utilize New England Nonwovens needlepunch nonwoven fabrics. Some examples are: cosmetic wipes needing high absorbency and cleaning wipes that are fluid filled for ease of use and comfort. Wipes made from New England Nonwoven needlepunch fabrics that have high oil absorbency are used in environmental clean up operations. </div>
+      </div>
+    </div>
+          <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">Mattresses &#45; Flame Retardant Barrier Fabrics</a>
+        </h4>
+      </div>
+      <div id="collapse5" class="panel-collapse collapse">
+        <div class="panel-body">All mattresses made and sold in the United States after July 1st 2007 must meet the Federal Regulation 16 CFR part 1633 for flammability requirements. New England Nonwoven flame retardant needlepunch fabrics, made to the rigid standards provided by our customers, have been widely used to help mattress manufacturers meet this new Federal Standard. The flame retardant needlepunch fabrics can be quilted, laminated, combined, printed and sewn with other mattress components to provide effective fire barriers.</div>
+      </div>
+    </div>
+          <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">Molding</a>
+        </h4>
+      </div>
+      <div id="collapse6" class="panel-collapse collapse">
+        <div class="panel-body">New England Nonwovens needlpunch fabrics can be made with blends of regular fibers and low melt fibers that allow the material to take and hold a shape in many molding applications. The needlepunch fabrics can also be saturated with polymer resins that allow the material to be molded with considerable rigidity. These molded needlepunch fabrics find there way into a variety of products such as automotive trunks and interiors, hats, medical products, filters, abrasive pads, insulators and many more. </div>
+      </div>
+    </div>
+          <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse7">Automotive</a>
+        </h4>
+      </div>
+      <div id="collapse7" class="panel-collapse collapse">
+        <div class="panel-body"><p>Needlepunch fabrics are extensively used in automotive applications in the trunk, under the hood and in the interior. The needlepunch fabrics can be made to provide heat insulation, acoustical barriers, filters for liquids and air and interior surface fabrics. </p>
+        <p>Soft needlepunch fabrics are used to make protective pads that mechanics place on the automobile to protect the paint and finish during repairs. </p>  
+        </div>
+      </div>
+    </div>
+          <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse8">Carpet Pads </a>
+        </h4>
+      </div>
+      <div id="collapse8" class="panel-collapse collapse">
+        <div class="panel-body">Needlepunch fabrics are commonly used to make carpet pads for carpets and rugs of all shapes and sizes. Polyester, polypropylene and wool are just some of the fibers used to make needlepunch fabric pads for the carpet and rug market. Needlepunch carpet pads have long been used to provide a layer of cushion, comfort and protection under carpets and rugs. New England Nonwovens needlepunch carpet pads from 10 to 30 ounces per yard are currently in use. 
+</div>
+      </div>
+    </div>
+          <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse9">Safety Mats</a>
+        </h4>
+      </div>
+      <div id="collapse9" class="panel-collapse collapse">
+        <div class="panel-body">New England Nonwovens polypropylene needlepunch cut into mats and placed around machinery can be an effective help in provided safe footing for operators. Polypropylene has an affinity for oil and thus can help keep floors subjected to machinery oils from becoming slippery. New England Nonwovens needlpunch fabrics have also been coated and laminated to provide fluid proof and high grip surfaces. </div>
+      </div>
+    </div>
+          <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse10">Filtration</a>
+        </h4>
+      </div>
+      <div id="collapse10" class="panel-collapse collapse">
+        <div class="panel-body">The use of needlepunch fabrics for filtering wet (liquids) and dry (particulates) media is extensive and encompasses a vast array of applications. New England Nonwovens needlepunch fabrics have been impregnated, calendered, singed, folded, laminated and combined with other materials for to make filters. Needlepunch fabrics can be made to absorb or repel various liquids, gases or particulates. Fibers and fiber blends can be chosen to make needlepunch fabrics that handle environmental extremes such as heat, cold, ultra violet light exposure, fluids and chemical concentrations. New England Nonwovens also has a stock program for Micron Rated Liquid Filtration. </div>
+      </div>
+    </div>
+          <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse11">Micron Rated Liquid Filtration Media &#45; Stock Program</a>
+        </h4>
+      </div>
+      <div id="collapse11" class="panel-collapse collapse">
+        <div class="panel-body">
+            <p>New England Nonwovens stocks a broad line of micron rated liquid filter media. We stock several micron grades in polyester as well as polypropylene. In polyester we offer both singed and plain finish micron rated fabrics. New England Nonwovens stocks these items in 3, 5, 10, 25, 50, 75, 100, & 200 micron grades. The polypro is offered and stocked in 3 different widths, 21", 23" and 72". </p>
+            <p>On the polypropylene side our standard finish is a glazed fabric. All of our polypropylene filter media are made from FDA compliant polypropylene staple fibers. We stock the polypro in 1, 3, 5, 10, 25, 50, 75, 100, & 200 micron grades. The polypro is offered and stocked in 3 widths 21", 23", and 72". 
+            </p>
+            <p>Our standard roll size for our 5 through 100 micron grades is 125 yards. On our 72" products these are packaged individually. On our 20", 21" and 23" widths these items are packaged in rolls of 3. Our minimum order for the narrow widths would be 375 yards. apparel, sewn, decorative covers for pillows, appliances, furniture and wall decorations. Our standard rolls size for 1, 3, & 200 micron grades is 125 yards. As with the other microns the 72" items are packaged individually and the narrow widths are in packages of 3. Our minimum order sizes are 100 and 300 yards respectively.
+            </p>
+          </div>
+      </div>
+    </div>
+          <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse12">Craft and Hobby</a>
+        </h4>
+      </div>
+      <div id="collapse12" class="panel-collapse collapse">
+        <div class="panel-body">New England Nonwoven needlepunch fabrics have been made and used in many craft and hobby applications. Home products are a popular use including items such as linings for New England Nonwoven needlepunch fabric is used as base material for quilted items, needlepoint, hook rugs, over mitts and many others. Fibers and fiber blends of polyester, polypropylene, cotton and wool are popular in this market. </div>
+      </div>
+    </div>
+          <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse13">Composites</a>
+                              <span class="pull-right">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse13">
+                                        <span class="toggle-icon glyphicon glyphicon-collapse-down"></span>
+                                    </a>
+                                </span>
+        </h4>
+                        
+      </div>
+      <div id="collapse13" class="panel-collapse collapse">
+        <div class="panel-body">New England Nonwovens had the ability to "layer" different fiber needlepunch webs as well as scrims, foams, woven fabrics and other nonwoven materials. The composite layers allow New England Nonwovens to build needlepunch fabrics that can have different properties and characteristics from one side versus the other. New England Nonwovens has built needlepunch composites for the mattress pad market with needlepunch and spunbonded layers. Layered needlpunch fabrics are used to draw moisture away from the top surface and absorb in the bottom layer for incontinent bed pads. The lamination industry uses New England Nonwovens needlepunch with urethane foam as substrate that has give and recovery when laminated or coated. Woven scrims are layered with New England Nonwovens needlepunch webs to give stability and strength. </div>
+
+      </div>
+    </div>
+      
+  </div> 
+</div>
+
+<div class="panel-group" id="panel-quote-group">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h4 class="panel-title">
+                                <strong>QUOTE OF THE DAY</strong>
+                                <span class="pull-right">
+                                    <a data-toggle="collapse" data-parent="#panel-quote-group" href="#collapseQuote">
+                                        <span class="toggle-icon glyphicon glyphicon-collapse-up"></span>
+                                    </a>
+                                </span>
+                              </h4>
+                            </div>
+                            <div id="collapseQuote" class="panel-collapse collapse in">
+                                <div class="panel-body">
+                                    <blockquote>
+  										<p>When I am working on a problem I never think about beauty. I only think about how to solve the problem. But when I have finished, if the solution is not beautiful, I know it is wrong.</p>
+  										<footer><cite title="Source Title">Buckminster Fuller</cite> (1895-1983)</footer>
+									</blockquote>
+                                </div>
+                            </div>
+                        </div>
+            		</div>
+
+<script type="text/javascript">
+			$(document).ready(function () {
+				$('a[data-toggle="collapse"]').click(function () {
+					$(this).find('span.toggle-icon').toggleClass('glyphicon-collapse-up glyphicon-collapse-down');
+				})
+			})
+		</script>
+
+    
+</body>
+</html>
+    
